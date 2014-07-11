@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Class-UI Navbar test</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/tests.css" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/dropdown.js"></script>
+		<script type="text/javascript">
+			$(document.body).ready(function(){
+				$(".dropdown").dropdown();
+			});
+		</script>
+	</head>
+	<body>
+		<div class="nav">
+			<div class="navbar block">
+				<div class="cell logo dcell">
+					ClassBook
+				</div>
+				<div class="cell remain">
+					<div style="margin : 0px 10px;">
+						<input type="text"  style="width : 100%;outline : 0px;border : 0px;padding : 3px 0px;"/>
+					</div>
+
+				</div>
+				<div class="cell">
+					<div class="dcell" style="max-width: 50px;">
+						kishore kittu
+					</div>
+				</div>
+				<div class="cell">
+					<div class="dropdown" style="float : right;">
+						<a href="#" class="button light">drop</a>
+						<ul class="right">
+							<li>kishore</li>
+							<li>kishore</li>
+							<li>kishore</li>
+							<li><i class="fa fa-power-off"></i>logout</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="max-width: 950px;border : 1px solid black;margin : auto;">
+			<div class="dropdown">
+				<a href="#" class="button">drop</a>
+				<ul class="left">
+					<li>kishore</li>
+					<li>kishore</li>
+					<li>kishore</li>
+					<li>kishore</li>
+				</ul>
+			</div>
+			<div class="dropdown" style="float : right;">
+				<a href="#" class="button">drop</a>
+				<ul class="right">
+					<li>kishore</li>
+					<li>kishore</li>
+					<li>kishore</li>
+					<li>kishore</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+/* 
+	Created on : Jul 11, 2014, 10:36:52 AM
+	Author     : kishore
+*/
+
+.dropdown{
+	position : relative;
+	display : inline-block;
+	margin : auto;
+	.button{
+		display : inline-block;
+		padding : 7px;
+		color : $ddColor;
+		text-decoration : none;
+		&.light{
+			color : white;
+			&:hover,&._clicked{
+				background-color : $ddColor;
+			}
+		}
+		&:hover,&._clicked{
+			color : $llColor;
+			background-color : $Color;
+		}
+	}
+	ul{
+		display : none;
+		position : absolute;
+		top : 100%;
+		cursor : default;
+		background-color : white;
+		min-width : 170px;
+		padding : 10px 0px;
+		box-shadow : 0px 0px 10px $Color;
+		font-size : 13px;
+		li{
+			color : $ddColor;
+			padding : 5px 10px;
+			cursor : pointer;
+			&:hover{
+				background-color : $Color;
+				color : $llColor;
+			}
+		}
+		&._clicked{
+			display : block;
+		}
+		&.right{
+			right : 0%;
+		}
+		&.left{
+			left : 0%;
+		}
+	}
+}
