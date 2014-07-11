@@ -22,6 +22,7 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   vertical-align: baseline;
 }
 
@@ -54,6 +55,11 @@ q:before, q:after, blockquote:before, blockquote:after {
 
 a img {
   border: none;
+}
+
+a, a:hover, a:active{
+	outline : 0px;
+	color : inherit;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
