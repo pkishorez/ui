@@ -1,0 +1,73 @@
+/* 
+    Created on : Jul 11, 2014, 9:03:04 AM
+    Author     : kishore
+*/
+
+.nav{
+    background-color : $Color;
+	height : 40px;
+}
+
+.navbar{
+	//background-color : $lColor;
+	height : 100%;
+	width : 950px;
+	margin : auto;
+	cursor : default;
+	color : white;
+
+	.block,&.block{
+		display : table;
+		
+		// Default Cell style
+		.cell{
+			display : table-cell;
+			vertical-align : middle;
+			
+			// Styles for logo.
+			&.logo{
+				padding : 0px 10px;
+				font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+				font-size : 20px;
+				color : white;
+			}
+			// Light cell nested inside cell or just cell
+			&.lcell,lcell{
+				padding : 0px 10px;
+				cursor : pointer;
+				
+				// Changing color and background to reflect lightness
+				&:hover{
+					background-color : $lColor;
+					color : $ddColor;
+				}
+			}
+
+			// Dark Cell
+			&.dcell,.dcell{
+				padding : 0px 10px;
+				cursor : pointer;
+				
+				// Changing color and background to reflect Darkness
+				&:hover{
+					background-color : $dColor;
+					color : $lllColor;
+				}
+			}
+			
+			// Applying vertical padding for nested cell elements.
+			.lcell,.dcell{
+				padding : 5px 10px;
+				
+				// Added these styles so that for max width nested cells
+				// Elements show ellipsis and do not wrap around width;
+				white-space : nowrap;
+				overflow : hidden;
+				text-overflow : ellipsis;
+			}
+			&.remain{
+				width : 100%;
+			}
+		}
+	}
+}
