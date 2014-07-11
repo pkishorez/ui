@@ -7,22 +7,29 @@
 	position : relative;
 	display : inline-block;
 	margin : auto;
+	
+	// Button which toggles dropdown.
 	.button{
 		display : inline-block;
 		padding : 7px;
 		color : $ddColor;
 		text-decoration : none;
+		
+		// Light button for dark background elements
 		&.light{
 			color : white;
 			&:hover,&._clicked{
 				background-color : $ddColor;
 			}
 		}
+		
 		&:hover,&._clicked{
 			color : $llColor;
 			background-color : $Color;
 		}
 	}
+	
+	// Dropdown menu.
 	ul{
 		display : none;
 		position : absolute;
@@ -33,6 +40,8 @@
 		padding : 10px 0px;
 		box-shadow : 0px 0px 10px $Color;
 		font-size : 13px;
+		
+		// Elements of drop down menu.
 		li{
 			color : $ddColor;
 			padding : 5px 10px;
@@ -42,12 +51,18 @@
 				color : $llColor;
 			}
 		}
+		
+		// Display menu if button is clicked.
 		&._clicked{
 			display : block;
 		}
+		
+		// Right overlay
 		&.right{
 			right : 0%;
 		}
+		
+		// Left overlay
 		&.left{
 			left : 0%;
 		}
