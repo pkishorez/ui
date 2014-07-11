@@ -198,20 +198,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 5px 10px;
   cursor: pointer;
 }
-/* line 49, ../sass/partials/_dropdown.scss */
+/* line 51, ../sass/partials/_dropdown.scss */
+.dropdown ul li.divider {
+  cursor: default;
+  border-top: 1px solid #ababab;
+  border-bottom: 0px solid;
+  margin: 7px 0px;
+  padding: 0px;
+}
+/* line 60, ../sass/partials/_dropdown.scss */
+.dropdown ul li.disabled {
+  cursor: default;
+  color: #ababab !important;
+}
+/* line 63, ../sass/partials/_dropdown.scss */
+.dropdown ul li.disabled:hover {
+  background-color: white;
+  color: inherit;
+}
+/* line 68, ../sass/partials/_dropdown.scss */
 .dropdown ul li:hover {
   background-color: #0c9301;
   color: #8dfd84;
 }
-/* line 56, ../sass/partials/_dropdown.scss */
+/* line 75, ../sass/partials/_dropdown.scss */
 .dropdown ul._clicked {
   display: block;
 }
-/* line 61, ../sass/partials/_dropdown.scss */
+/* line 80, ../sass/partials/_dropdown.scss */
 .dropdown ul.right {
   right: 0%;
 }
-/* line 66, ../sass/partials/_dropdown.scss */
+/* line 85, ../sass/partials/_dropdown.scss */
 .dropdown ul.left {
   left: 0%;
 }

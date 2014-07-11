@@ -46,6 +46,25 @@
 			color : $ddColor;
 			padding : 5px 10px;
 			cursor : pointer;
+			
+			
+			&.divider{
+				cursor : default;
+				border-top : 1px solid #ababab;
+				border-bottom : 0px solid;
+				margin : 7px 0px;
+				padding : 0px;
+			}
+			
+			// Elements in dropdown menu that are disabled.
+			&.disabled{
+				cursor : default;
+				color : #ababab !important;
+				&:hover{
+					background-color : white;
+					color : inherit;
+				}
+			}
 			&:hover{
 				background-color : $Color;
 				color : $llColor;
