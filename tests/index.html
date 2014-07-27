@@ -8,22 +8,25 @@
 		<link rel="stylesheet" href="../css/tests.css" />
 		<link rel="stylesheet" href="../css/font-awesome.min.css" />
 		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.js"></script>
 		<script type="text/javascript" src="../js/dropdown.js"></script>
+		<script type="text/javascript" src="../js/flash.js"></script>
 		<script type="text/javascript">
 			$(document.body).ready(function(){
 				$(".dropdown").dropdown();
+				$(".flash").flash();
 			});
 		</script>
 	</head>
 	<body>
 		<div class="nav">
-			<div class="navbar block">
+			<div class="navbar nblock span20">
 				<div class="cell logo dcell">
 					ClassBook
 				</div>
 				<div class="cell remain">
 					<div style="margin : 0px 10px;">
-						<input type="text"  style="width : 100%;outline : 0px;border : 0px;padding : 3px 0px;"/>
+						<input type="text"  style="width : 100%;box-sizing: border-box;outline : 0px;border : 0px;padding : 7px;"/>
 					</div>
 
 				</div>
@@ -33,8 +36,8 @@
 					</div>
 				</div>
 				<div class="cell">
-					<div class="dropdown" style="float : right;">
-						<a href="#" class="button light">drop</a>
+					<div class="dropdown" style="float : right;margin: auto;">
+						<a href="#" class="button light" >drop</a>
 						<ul class="right">
 							<li>kishore</li>
 							<li>kishore</li>
@@ -45,25 +48,39 @@
 				</div>
 			</div>
 		</div>
-		<div style="max-width: 950px;border : 1px solid black;margin : auto;">
-			<div class="dropdown">
-				<a href="#" class="button">drop</a>
-				<ul class="left">
-					<li class="disabled">kishore</li>
-					<li class="divider"></li>
-					<li>kishore</li>
-					<li>kishore</li>
-					<li>kishore</li>
-				</ul>
+		<div class="span20 marauto marv5">
+			<div class="span4 lfloat">
+				<div class="well rmar5">
+					kishore
+				</div>
 			</div>
-			<div class="dropdown" style="float : right;">
-				<a href="#" class="button">drop</a>
-				<ul class="right">
-					<li>kishore</li>
-					<li>kishore</li>
-					<li>kishore</li>
-					<li>kishore</li>
-				</ul>
+			<div class="span10 lfloat">
+				<div class="well marh5">
+					kittu<br />
+					kishore
+				</div>
+			</div>
+			<div class="span6 lfloat" >
+				<div class="well lmar5">
+					kittu<br />
+					kishore
+				</div>
+			</div>
+		</div>
+		<div class="flash">
+			<div class="fblock">
+				<div class="fcontent well pad0 window span7">
+					<div class="navbar nblock" style="height : 30px;">
+						<div class="cell padh5">Window</div>
+						<div class="cell remain"></div>
+						<div class="cell dcell close">
+							X
+						</div>
+					</div>
+					<div class="well light">
+						content goes here...
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

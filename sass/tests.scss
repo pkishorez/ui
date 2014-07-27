@@ -3,10 +3,15 @@
     Author     : kishore
 */
 
+@import "compass/css3";
 @import "partials/reset";
 @import "partials/variables";
+@import "partials/utilities";
 @import "partials/navbar";
 @import "partials/dropdown";
+@import "partials/grid";
+@import "partials/well";
+@import "partials/flash";
 
 body{
 }

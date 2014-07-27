@@ -3,26 +3,30 @@
     Author     : kishore
 */
 
+$navbar_height : 45px;
 .nav{
     background-color : $Color;
-	height : 40px;
+	height : $navbar_height;
 }
 
 .navbar{
-	//background-color : $lColor;
+	background-color : $Color;
 	height : 100%;
-	width : 950px;
+	width : 100%;
 	margin : auto;
 	cursor : default;
 	color : white;
 
-	.block,&.block{
+	.nblock,&.nblock{
 		display : table;
+		height : 100%;
+		width : 100%;
 		
 		// Default Cell style
 		.cell{
 			display : table-cell;
 			vertical-align : middle;
+			line-height : 0px;
 			
 			// Styles for logo.
 			&.logo{
@@ -67,6 +71,19 @@
 			}
 			&.remain{
 				width : 100%;
+			}
+			
+			// Span height of dropdown button defined with total style.
+			.dropdown{
+				.button{
+					padding : 5px 10px;
+				}
+				&.total .button{
+					display : table-cell;
+					vertical-align : middle;
+					height : $navbar_height;
+					padding : 0px 7px;
+				}
 			}
 		}
 	}

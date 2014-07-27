@@ -1,0 +1,26 @@
+/* 
+	Created on : Jul 11, 2014, 12:54:37 PM
+	Author     : kishore
+*/
+
+.well, .well-large, .well-small,.well-none{
+	margin : auto;
+	background-color : $Color;
+	color : white;
+	padding : 10px;
+	
+	&.light{
+		background-color : white;
+		color : $ddColor;
+	}
+}
+
+.well-none{
+	padding : 0px;
+}
+.well-small{
+	padding : 7px;
+}
+.well-large{
+	padding : 15px;
+}

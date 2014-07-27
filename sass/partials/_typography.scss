@@ -1,0 +1,15 @@
+/* 
+	Created on : Jul 13, 2014, 6:24:15 PM
+	Author     : kishore
+*/
+
+.sbutton{
+	background-color : white;
+	color : $Color;
+	padding : 7px 10px;
+	cursor : pointer;
+	&:hover,&.clicked{
+		background-color : $Color;
+		color : white;
+	}
+}

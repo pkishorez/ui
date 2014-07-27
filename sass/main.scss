@@ -3,4 +3,32 @@
     Author     : kishore
 */
 
+// Import CSS3 support for cross browser CSS3 properties
+@import "compass/css3";
+
+// Reset all elements for cross browser issues
 @import "partials/reset";
+
+// Define base variables
+@import "partials/variables";
+
+// Utility functions that make life lazier
+@import "partials/utilities";
+
+// Add support for navbar component
+@import "partials/navbar";
+
+// Dropdown Component
+@import "partials/dropdown";
+
+// Support for grid layout design.
+@import "partials/grid";
+
+// Wells for fast divs creation
+@import "partials/well";
+
+// Add flash content at center of webpage.
+@import "partials/flash";
+
+// Add Typography to content
+@import "partials/typography";
